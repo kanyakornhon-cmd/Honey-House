@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Honey House | น้ำผึ้งแท้จากธรรมชาติ</title>
+  <meta name="description" content="เลือกซื้อน้ำผึ้งคุณภาพจาก Honey House">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#">🍯 Honey House</a><nav><a href="#products">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><a href="#contact">ติดต่อ</a></nav><button id="cart-open" class="cart-button">ตะกร้า <span id="cart-count">0</span></button></header>
+<main>
+<section class="hero"><div><p class="eyebrow">NATURAL • PURE • DELICIOUS</p><h1>ความหวานจากธรรมชาติ<br><em>ส่งตรงถึงบ้านคุณ</em></h1><p>เลือกน้ำผึ้งคุณภาพ เติมความหวานให้ทุกวันของคุณ</p><a class="primary" href="#products">เลือกซื้อสินค้า</a></div><div class="hero-art">🍯<span>100%<br>ธรรมชาติ</span></div></section>
+<section id="products" class="section"><p class="eyebrow">OUR PRODUCTS</p><h2>สินค้าของเรา</h2><div id="product-grid" class="products"></div></section>
+<section id="about" class="about"><h2>ความใส่ใจในทุกหยด</h2><p>Honey House คัดสรรน้ำผึ้งเพื่อให้คุณได้สัมผัสรสชาติจากธรรมชาติ เหมาะสำหรับเติมความหวานให้เมนูโปรด</p></section>
+<section id="contact" class="section contact"><h2>สั่งซื้อและสอบถาม</h2><p>กรอกข้อมูลจัดส่งในขั้นตอนชำระคำสั่งซื้อ เราจะติดต่อกลับเพื่อยืนยันรายการ</p></section>
+</main>
+<footer>© 2026 Honey House · น้ำผึ้งคุณภาพจากธรรมชาติ</footer>
+<div id="cart-panel" class="drawer hidden"><div class="drawer-card"><button id="cart-close" class="close">×</button><h2>ตะกร้าสินค้า</h2><div id="cart-items"></div><div class="total">รวมทั้งสิ้น <strong id="cart-total">฿0</strong></div><button id="checkout-open" class="primary full">กรอกข้อมูลจัดส่ง</button></div></div>
+<div id="checkout-panel" class="drawer hidden"><form id="checkout-form" class="drawer-card"><button type="button" id="checkout-close" class="close">×</button><h2>ข้อมูลจัดส่ง</h2><label>ชื่อ-นามสกุล<input name="customerName" required></label><label>เบอร์โทรศัพท์<input name="phone" required inputmode="tel"></label><label>ที่อยู่จัดส่ง<textarea name="address" required rows="3"></textarea></label><label>จังหวัด<input name="province" required></label><label>รหัสไปรษณีย์<input name="postcode" required inputmode="numeric"></label><label>หมายเหตุ<textarea name="note" rows="2"></textarea></label><p id="checkout-message" class="message"></p><button class="primary full" type="submit">ยืนยันคำสั่งซื้อ</button></form></div>
+<script src="app.js"></script></body></html>

@@ -1,2 +1,15 @@
-# Honey-House
-Online Honey Shop Website with Google Sheets Inventory and Order Management
+# Honey House
+
+เว็บไซต์ร้านน้ำผึ้งตัวอย่าง มีสินค้า 2 SKU, ตะกร้าสินค้า และแบบฟอร์มคำสั่งซื้อ
+
+## ไฟล์รูปสินค้า
+- `public/images/honey-001.jpg`
+- `public/images/honey-002.jpeg`
+
+## ทดลองเว็บไซต์
+เปิด `index.html` ในเบราว์เซอร์ หรือ Deploy โปรเจกต์นี้บน Vercel โดยเลือก Framework Preset = Other และ Build Command/Output Directory เว้นว่างหรือใช้ `.` ตามหน้าตั้งค่า
+
+## เชื่อม Google Sheets
+ดูคำแนะนำใน `google-apps-script/Code.gs` จากนั้นใส่ URL ของ Apps Script Web App ในตัวแปร `SHEETS_API_URL` ที่ไฟล์ `app.js`
+
+หมายเหตุ: โปรเจกต์นี้เป็นต้นแบบเพื่อการเรียนรู้ ก่อนใช้งานจริงควรเพิ่มการตรวจสอบสต็อกฝั่งเซิร์ฟเวอร์ ระบบป้องกันคำสั่งซื้อซ้ำ และเชื่อมต่อผู้ให้บริการขนส่งเพื่อออกเลขติดตาม/ใบปะหน้าพัสดุจริง
